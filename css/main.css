@@ -17,6 +17,13 @@ body {
     display: flex;
 
     height: 100vh;
-    
+
     background-color: var(--bg);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+
+    width: 4vw;
 }
