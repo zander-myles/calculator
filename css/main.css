@@ -11,6 +11,13 @@
 * {
     font-family: 'Roboto', sans-serif;
     color: var(--text);
+
+    border: 1px dashed gray;
+}
+
+html {
+    border: none;
+    width: fit-content;
 }
 
 body {
@@ -19,11 +26,148 @@ body {
     height: 100vh;
 
     background-color: var(--bg);
+
+    border: none;
+
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 4rem;
+    text-align: center;
+}
+
+.themes-pg {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 20vw;
+}
+
+.themes-container {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.theme-preview {
+    height: 9vw;
+    width: 9vw;
+
+    border-radius: 50%;
+}
+
+.theme-name {
+    font-size: 2rem;
 }
 
 nav {
     display: flex;
     flex-direction: column;
 
-    width: 4vw;
+    position: sticky;
+    left: 0;
+
+    min-width: 3vw;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+
+.nav-button {
+    height: 3vw;
+}
+
+.nav-button.themes {
+    margin-top: auto;
+}
+
+.main-pg {
+    display: flex;
+
+    min-width: 97vw;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1.5;
+}
+
+.results-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.8;
+}
+
+.buttons-section {
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+
+    flex-grow: 1;
+}
+
+.button.equal {
+    grid-area: -1/-1/-2/-3;
+}
+
+.history-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.conversions-pg {
+    display: flex;
+
+    min-width: 97vw;
+}
+
+.measurements-section {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+}
+
+.measurements-types {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.finance-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.finance-types {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    flex-grow: 1;
+}
+
+.about-pg {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 97vw;
 }
