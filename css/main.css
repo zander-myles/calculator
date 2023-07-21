@@ -1,0 +1,40 @@
+:root {
+    --text: #050505;
+    --bg: #fafafa;
+    --primary: #232323;
+    --secondary: #e6e6e6;
+    --accent: #3469cb;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration-thickness: 8;
+}
+
+html {
+    font-size: 62.5%;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    scroll-behavior: smooth;
+}
+
+button {
+    cursor: pointer;
+}
