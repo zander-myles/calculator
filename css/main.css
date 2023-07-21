@@ -8,4 +8,9 @@
 
 * {
     font-family: Roboto;
+    color: var(--text);
+}
+
+body {
+    background-color: var(--bg);
 }
